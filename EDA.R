@@ -1,4 +1,4 @@
-#Install these package if you do not have them on your computer
+#Install these package on my computer
 install.packages("tidyverse")
 install.packages("learnr")
 install.packages("readxl")
@@ -66,7 +66,6 @@ summary(employee)
 
 #salary is a continuous variable/ scale so we run a summary statistics
 min(employee$salary); max(employee$salary); mean(employee$salary);sd(employee$salary)
-
 range(employee$salary); var(employee$salary); median(employee$salary)
 # gender is a categorical variable so we run a frequency table
 table(employee$gender) # categories variable
@@ -80,7 +79,7 @@ round(prop.table(job)*100,2)
 
 #-------------------------------------------------------------------------------------------------------------------------
 
-# Data visualization in R
+# Data visualization
 #graphics.off()
 #since gender is categorical so we run a bar chart or a pie chart 
 barplot(table(employee$gender))
@@ -89,9 +88,7 @@ dev.off()
 # jobcat is categorical so we either run a bar chart or a pie chart
 barplot(table(employee$jobcat))
 
-
 barplot(table (employee$jobcat), horiz = TRUE) # gives a vertical format of the picture
-
 
 pie( table(employee$jobcat),
      col = c("white", "gray90", "gray60"))
@@ -166,22 +163,21 @@ ggboxplot(employee, x = "jobcat", y = "salary",
 ?palette
 graphics.off()
 #---------------------------------------------------------------------------
-#Visualisation: Visualize your data using scatter plots
+#Visualisation: Visualize the data using scatter plots
 colnames(employee)
 
 ggscatter(employee, x = "salbegin", y = "salary", 
           add = "reg.line", conf.int = TRUE, 
           cor.coef = TRUE, cor.method = "pearson",
           xlab = "salbegin", ylab = "salary")
-#--------------------------------------------------------
-
+#---------------------------------------------------------------------------
 
 #Intepretation of Results
 #The p-value of the test is 2.2e^{-16}, which is less than the
 #significance level alpha = 0.05. We can conclude that 
 #carat and price are significantly correlated
 #with a correlation coefficient of 0.88 and p-value of 2.2e^{-16} .
-#-------------------------------------------------------------------
+#--------------------------------------------------------------------------
 
 #Correlation Matrix
 
@@ -230,7 +226,6 @@ plot(employee1)  # Plot
 sa<-table(employee$gender,employee$jobcat)
 sa
 round(prop.table(sa)*100,2)
-
 
  ## cleaning the environment space
 
