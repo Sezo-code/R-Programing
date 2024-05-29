@@ -109,22 +109,22 @@ DF2<- read.csv("weightB.csv")
 str(DF1)
 str(DF2)
 #left_join()
-left_join(DF1, DF2, by="ï..ID")
+left_join(DF1, DF2, by="Ã¯..ID")
 
-left<- left_join(DF1, DF2, by="ï..ID") # store in a dataframe
+left<- left_join(DF1, DF2, by="Ã¯..ID") # store in a dataframe
 
 #right_join()
-right_join(DF1, DF2, by="ï..ID")
+right_join(DF1, DF2, by="Ã¯..ID")
 
-right <- right_join(DF1, DF2, by="ï..ID")
+right <- right_join(DF1, DF2, by="Ã¯..ID")
 view()
 
 #inner_join()
-inner<-inner_join(DF1, DF2, by="ï..ID")
+inner<-inner_join(DF1, DF2, by="Ã¯..ID")
 
 
 #full_join()
-full<-full_join(DF1, DF2, by="ï..ID")
+full<-full_join(DF1, DF2, by="Ã¯..ID")
 view()
 #DM9: DESCRIPTIVE STATISTICS 
 
