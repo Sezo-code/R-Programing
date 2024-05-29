@@ -47,8 +47,6 @@ power.prop.test(p1=0.6, p2=0.5, power=0.8)
 #the study should include at least 387 subjects in each of the groups.
 
 
-
-
 # Option 2: Using packages
 #use pwr package for esrtimating sample size
 install.packages("pwr")
@@ -81,11 +79,10 @@ r=delta/sigma # effect size
 pwr.t.test(d=r, sig.level = 0.1, power = 0.8, type= "two.sample")
 
 
-# you can play around with the command depending on your objective
+# command depending on the objective
 #alternative is the two-sided hypothesis
 
-
-#############calculate the power, given sample size###################
+#############calculating the power, given sample size###################
 
 #Aim: to compute the power of a study to show a difference between
 #group 1 (n=28) in which the event probability is 30% and 
