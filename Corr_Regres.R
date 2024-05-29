@@ -1,5 +1,5 @@
 
-#LINEAR REGRESSION IN R
+#SAMPLE OF LINEAR REGRESSION ANALYSIS IN R
 
 library(tidyverse)
 library(learnr) 
@@ -18,7 +18,6 @@ install.packages("olsrr")
 
 #tidyverse for data manipulation and visualization
 #ggpubr: creates easily a publication ready-plot
-
 
 
 ## setting directory
