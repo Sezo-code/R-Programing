@@ -21,7 +21,6 @@ install.packages("olsrr")
 
 
 
-
 ## setting directory
 
 setwd("~/MAK-SDM/day4")
@@ -107,7 +106,6 @@ summary(model2)
 #their water uptake by 2.733ml/bird.
 
 
-
 #Regression line
 
 ggplot(eggp, aes(Fooduptake, Wateruptake)) +
@@ -187,7 +185,6 @@ hard
 colnames(hard)
 plot(Tensiles.Y.~HWconcn.X.,data=hard)
 
-
 mod1<-lm(Tensiles.Y.~HWconcn.X.,data=hard)
 summary(mod1)
 
@@ -206,9 +203,6 @@ plot(mod2)
 
 graphics.off()
 #''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-#----------------------------------------------------------
-#--------------------------------------------------------------
 #--------------------------------------------------------------
 
 
